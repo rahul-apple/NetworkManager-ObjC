@@ -16,11 +16,11 @@ Add This In Your Podfile
 
 ```ruby
 pod "NetworkManager-ObjC"
-``
+```
 update pod
 ```ruby
 pod update
-``
+```
 
 ```Obj-C
 #import<NetworkManager.h>
@@ -31,7 +31,7 @@ pod update
 NetworkManager *manager;
 manager =[NetworkManager startManager];
 manager.delegate=self;
-``
+```
 
 
 #dont  forget   add  <NetworkManagerDelegate>
