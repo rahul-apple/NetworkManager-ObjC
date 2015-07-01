@@ -12,6 +12,8 @@ Pod::Spec.new do |s|
   s.version          = "0.1.0"
   s.summary          = "A class Designed for Check Internet connection.Written for IOS - Objective-C code ."
   s.description      = <<-DESC
+
+A class Designed for Check Internet connection.Written for iOS, Objective-C, Cocoa Touch, iPhone, iPad.
                        Usage:
                         NetworkManager *manager;
                         manager =[NetworkManager startManager];
@@ -19,7 +21,7 @@ Pod::Spec.new do |s|
 
                         *dont  forget   add  <NetworkManagerDelegate>
 
-refer the example for More Details
+                        refer the example for More Details
 
 
                        * Markdown format.

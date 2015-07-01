@@ -7,7 +7,30 @@
 
 ## Usage
 
+
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
+A class Designed for Check Internet connection.Written for iOS, Objective-C, Cocoa Touch, iPhone, iPad.
+Usage:
+NetworkManager *manager;
+manager =[NetworkManager startManager];
+manager.delegate=self;
+
+*dont  forget   add  <NetworkManagerDelegate>
+
+Implement These Methods:
+
+-(void)NetWorkConnectionDropped:(kNetworkStatus)netStatus{
+    //Method Gets Called When Internet connection Gets Dropped.!
+}
+-(void)NetWorkConnectionConnected:(kNetworkStatus)netStatus{
+    //Method Gets Called When Internet Connected Back.!
+}
+
+
+
+refer the example for More Details
+
 
 ## Requirements
 
