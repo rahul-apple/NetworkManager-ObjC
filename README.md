@@ -12,11 +12,29 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 A class Designed for Check Internet connection.Written for iOS, Objective-C, Cocoa Touch, iPhone, iPad.
 Usage:
+Add This In Your Podfile
+
+```ruby
+pod "NetworkManager-ObjC"
+``
+update pod
+```ruby
+pod update
+``
+
+```Obj-C
+#import<NetworkManager.h>
+
+
+
+
 NetworkManager *manager;
 manager =[NetworkManager startManager];
 manager.delegate=self;
+``
 
-*dont  forget   add  <NetworkManagerDelegate>
+
+#dont  forget   add  <NetworkManagerDelegate>
 
 Implement These Methods:
 
