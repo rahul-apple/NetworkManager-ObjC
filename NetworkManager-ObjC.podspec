@@ -10,18 +10,26 @@
 Pod::Spec.new do |s|
   s.name             = "NetworkManager-ObjC"
   s.version          = "0.1.0"
-  s.summary          = "A short description of NetworkManager-ObjC."
+  s.summary          = "A class Designed for Check Internet connection.Written for IOS - Objective-C code ."
   s.description      = <<-DESC
-                       An optional longer description of NetworkManager-ObjC
+                       Usage:
+                        NetworkManager *manager;
+                        manager =[NetworkManager startManager];
+                        manager.delegate=self;
+
+                        *dont  forget   add  <NetworkManagerDelegate>
+
+refer the example for More Details
+
 
                        * Markdown format.
                        * Don't worry about the indent, we strip it!
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/NetworkManager-ObjC"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "https://github.com/rahul-apple/NetworkManager-ObjC"
+  # s.screenshots     = "http://imgur.com/KMjmhPDhttp://imgur.com/KMjmhPD"
   s.license          = 'MIT'
   s.author           = { "rahul-apple" => "rahulthazhuthala@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/NetworkManager-ObjC.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/rahul-apple/NetworkManager-ObjC.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '7.0'
