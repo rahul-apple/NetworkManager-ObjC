@@ -7,7 +7,9 @@
 //
 
 @import UIKit;
-
-@interface kViewController : UIViewController
+#import "NetworkManager.h"
+@interface kViewController : UIViewController<NetworkManagerDelegate>{
+    IBOutlet UILabel *statusLebl;
+}
 
 @end

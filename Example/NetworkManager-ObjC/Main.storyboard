@@ -1,27 +1,65 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Xdi-Kv-154">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="wQg-tq-qST">
+        <!--K View Controller-->
+        <scene sceneID="DHs-gz-CAn">
             <objects>
-                <viewController id="whP-gf-Uak" customClass="kViewController" sceneMemberID="viewController">
+                <viewController id="Xdi-Kv-154" customClass="kViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="uEw-UM-LJ8"/>
-                        <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
+                        <viewControllerLayoutGuide type="top" id="NiZ-Tt-QKO"/>
+                        <viewControllerLayoutGuide type="bottom" id="tFk-h1-vnB"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <view key="view" contentMode="scaleToFill" id="qQV-qR-IVk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Internet Status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2sU-yc-UGW">
+                                <rect key="frame" x="47" y="288" width="228" height="93"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="93" id="DUi-04-8XC"/>
+                                    <constraint firstAttribute="width" constant="228" id="Hb3-Xl-dHn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XwK-AV-7GZ">
+                                <rect key="frame" x="25" y="59" width="271" height="93"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="271" id="GpD-eD-3Qq"/>
+                                    <constraint firstAttribute="height" constant="93" id="UT1-DC-jmU"/>
+                                </constraints>
+                                <string key="text">Check Internet connection
+ By disconnecting and 
+reconnecting back</string>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="2sU-yc-UGW" secondAttribute="centerY" id="ED0-bG-vgQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XwK-AV-7GZ" secondAttribute="trailing" constant="8" id="LDB-t1-rIg"/>
+                            <constraint firstItem="XwK-AV-7GZ" firstAttribute="leading" secondItem="qQV-qR-IVk" secondAttribute="leadingMargin" constant="9" id="TS0-hH-rAk"/>
+                            <constraint firstAttribute="centerX" secondItem="2sU-yc-UGW" secondAttribute="centerX" id="mk2-xo-VZs"/>
+                            <constraint firstAttribute="centerX" secondItem="XwK-AV-7GZ" secondAttribute="centerX" id="xPi-VO-uzK"/>
+                            <constraint firstItem="XwK-AV-7GZ" firstAttribute="top" secondItem="NiZ-Tt-QKO" secondAttribute="bottom" constant="39" id="yaA-gU-QOB"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="statusLebl" destination="2sU-yc-UGW" id="b29-CL-KD1"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fEW-Mc-BlO" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="433"/>
+            <point key="canvasLocation" x="460" y="384"/>
         </scene>
     </scenes>
 </document>

@@ -8,11 +8,23 @@
 
 #import "kViewController.h"
 
-@interface kViewController ()
+@interface kViewController (){
+    NetworkManager *manager;
+}
 
 @end
 
 @implementation kViewController
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    manager =[NetworkManager startManager];
+    manager.delegate=self;
+    [statusLebl.layer setShadowOffset:CGSizeMake(2, 3)];
+    [statusLebl.layer setShadowOpacity:0.25];
+    [statusLebl.layer setShadowRadius:3.0f];
+    
+}
 
 - (void)viewDidLoad
 {
@@ -25,5 +37,18 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma -mark NetworkManager Delegate
+
+-(void)NetWorkConnectionDropped:(kNetworkStatus)netStatus{
+    [statusLebl setText:@"Internet Connection Dropped."];
+    [statusLebl setTextColor:[UIColor redColor]];
+}
+-(void)NetWorkConnectionConnected:(kNetworkStatus)netStatus{
+    [statusLebl setText:@"Internet Connected."];
+    [statusLebl setTextColor:[UIColor greenColor]];
+}
+
+
 
 @end
