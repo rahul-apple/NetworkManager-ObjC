@@ -7,7 +7,6 @@
 //
 
 #import "kAppDelegate.h"
-
 @implementation kAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
