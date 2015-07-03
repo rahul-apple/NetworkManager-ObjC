@@ -21,11 +21,13 @@ update pod
 ```ruby
 pod update
 ```
-
-```Obj-C
+Add to Your ViewController
+```ruby
 #import<NetworkManager.h>
 
+@interface kViewController : UIViewController<NetworkManagerDelegate>{
 
+}
 
 
 NetworkManager *manager;
@@ -34,23 +36,22 @@ manager.delegate=self;
 ```
 
 
-#dont  forget   add  <NetworkManagerDelegate>
+#Implement These Methods:
 
-Implement These Methods:
-
+```ruby
 -(void)NetWorkConnectionDropped:(kNetworkStatus)netStatus{
     //Method Gets Called When Internet connection Gets Dropped.!
 }
 -(void)NetWorkConnectionConnected:(kNetworkStatus)netStatus{
     //Method Gets Called When Internet Connected Back.!
 }
-
+```
 
 
 refer the example for More Details
 
 
-## Requirements
+
 
 ## Installation
 
