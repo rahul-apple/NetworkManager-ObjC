@@ -37,14 +37,14 @@
         NSLog(@"Internet off");
         if (self.networkStatus==kNetworkConnected) {
             self.networkStatus=kNetworkDisConnected;
-            [self.delegate NetWorkConnectionDropped:kNetworkDisConnected];
+            [self.delegate netWorkConnectionDropped:kNetworkDisConnected];
         }
     }
     else{
         NSLog(@"Internet on");
         if (self.networkStatus==kNetworkDisConnected) {
             self.networkStatus=kNetworkConnected;
-            [self.delegate NetWorkConnectionConnected:kNetworkConnected];
+            [self.delegate netWorkConnectionConnected:kNetworkConnected];
         }
     }
 }

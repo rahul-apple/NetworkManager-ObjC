@@ -16,8 +16,8 @@ typedef enum{
 
 @protocol NetworkManagerDelegate <NSObject>
 
--(void)NetWorkConnectionDropped:(kNetworkStatus)netStatus;
--(void)NetWorkConnectionConnected:(kNetworkStatus)netStatus;
+-(void)netWorkConnectionDropped:(kNetworkStatus)netStatus;
+-(void)netWorkConnectionConnected:(kNetworkStatus)netStatus;
 
 @end
 

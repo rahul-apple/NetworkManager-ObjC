@@ -39,10 +39,10 @@ manager.delegate=self;
 #Implement These Methods:
 
 ```ruby
--(void)NetWorkConnectionDropped:(kNetworkStatus)netStatus{
+-(void)netWorkConnectionDropped:(kNetworkStatus)netStatus{
     //Method Gets Called When Internet connection Gets Dropped.!
 }
--(void)NetWorkConnectionConnected:(kNetworkStatus)netStatus{
+-(void)netWorkConnectionConnected:(kNetworkStatus)netStatus{
     //Method Gets Called When Internet Connected Back.!
 }
 ```

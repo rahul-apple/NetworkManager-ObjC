@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "NetworkManager-ObjC"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "A class Designed for Check Internet connection.Written for IOS - Objective-C code ."
   s.description      = <<-DESC
 

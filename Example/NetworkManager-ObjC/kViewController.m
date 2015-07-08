@@ -40,11 +40,11 @@
 
 #pragma -mark NetworkManager Delegate
 
--(void)NetWorkConnectionDropped:(kNetworkStatus)netStatus{
+-(void)netWorkConnectionDropped:(kNetworkStatus)netStatus{
     [statusLebl setText:@"Internet Connection Dropped."];
     [statusLebl setTextColor:[UIColor redColor]];
 }
--(void)NetWorkConnectionConnected:(kNetworkStatus)netStatus{
+-(void)netWorkConnectionConnected:(kNetworkStatus)netStatus{
     [statusLebl setText:@"Internet Connected."];
     [statusLebl setTextColor:[UIColor greenColor]];
 }
