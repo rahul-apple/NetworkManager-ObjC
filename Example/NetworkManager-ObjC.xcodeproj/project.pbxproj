@@ -25,7 +25,6 @@
 		A365ED7022A2EEFC557542AF /* Pods_NetworkManager_ObjC_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB4C8D3434D1C5AC1DC1E33 /* Pods_NetworkManager_ObjC_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		BE7CD5CB1B43C6DE0058B0DC /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7CD5C81B43C6DE0058B0DC /* NetworkManager.m */; };
 		BE7CD5CC1B43C6DE0058B0DC /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7CD5CA1B43C6DE0058B0DC /* Reachability.m */; };
-		BEEFB1AF1B4CFCB900C24728 /* NetworkManager.travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = BEEFB1AE1B4CFCB900C24728 /* NetworkManager.travis.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +69,6 @@
 		BE7CD5C81B43C6DE0058B0DC /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
 		BE7CD5C91B43C6DE0058B0DC /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		BE7CD5CA1B43C6DE0058B0DC /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
-		BEEFB1AE1B4CFCB900C24728 /* NetworkManager.travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NetworkManager.travis.yml; sourceTree = "<group>"; };
 		BF6897DA5699E7DEEBBAD07C /* Pods-NetworkManager-ObjC_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkManager-ObjC_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkManager-ObjC_Example/Pods-NetworkManager-ObjC_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F6A4B747E02AE9707E42E405 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -187,7 +185,6 @@
 				6E1D151B7FDE5BC4E707B2DC /* NetworkManager-ObjC.podspec */,
 				309E433A4DE486635E12F319 /* README.md */,
 				F6A4B747E02AE9707E42E405 /* LICENSE */,
-				BEEFB1AE1B4CFCB900C24728 /* NetworkManager.travis.yml */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
@@ -298,7 +295,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
-				BEEFB1AF1B4CFCB900C24728 /* NetworkManager.travis.yml in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);

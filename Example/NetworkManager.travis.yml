@@ -1,3 +1,0 @@
-language: objective-c
-xcode_project: NetworkManager-ObjC.xcodeproj  # /Example/
-xcode_scheme: NetworkManager-ObjCTests
