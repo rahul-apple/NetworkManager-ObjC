@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D4E3EFB4562E34F32C545D2F"
+               BlueprintIdentifier = "AE77459EE9A7A5DBFB212C5D"
                BuildableName = "NetworkManager-ObjC.bundle"
                BlueprintName = "Pods-NetworkManager-ObjC_Example-NetworkManager-ObjC-NetworkManager-ObjC"
                ReferencedContainer = "container:Pods.xcodeproj">
