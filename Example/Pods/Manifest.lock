@@ -1,6 +1,6 @@
 PODS:
   - Expecta (1.0.0)
-  - NetworkManager-ObjC (0.1.0)
+  - NetworkManager-ObjC (0.1.1)
   - Specta (1.0.2)
 
 DEPENDENCIES:
@@ -14,7 +14,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Expecta: 32604574add2c46a36f8d2f716b6c5736eb75024
-  NetworkManager-ObjC: 67292b2608c6e53aedae34703e097d2fb1097969
+  NetworkManager-ObjC: f69ccf49e05b0e9944c1b4fbcb8af20ed6e8a1a3
   Specta: 9cec98310dca411f7c7ffd6943552b501622abfe
 
 COCOAPODS: 0.37.2
