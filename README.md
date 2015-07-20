@@ -22,6 +22,8 @@ update pod
 pod update
 ```
 Add to Your ViewController
+
+#1.)DELGATE - METHODS
 ```
 #import<NetworkManager.h>
 
@@ -36,7 +38,7 @@ manager.delegate=self;
 ```
 
 
-#Implement These Methods:
+Implement These Methods:
 
 ```
 -(void)netWorkConnectionDropped:(kNetworkStatus)netStatus{
@@ -46,6 +48,45 @@ manager.delegate=self;
     //Method Gets Called When Internet Connected Back.!
 }
 ```
+
+
+
+#1.)NOTIFICATION REGISTER - METHODS
+```
+#import<NetworkManager.h>
+
+@interface kViewController : UIViewController{
+
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+
+//.......
+NetworkManager *manager;
+manager =[NetworkManager startManager];
+manager.typeSelected =NOTIFICATION_REGISTER;
+[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(networkDisConnected:) name:@"NetworkDisConnected" object:nil];
+[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(networkConnected:) name:@"NetworkConnected" object:nil];
+
+//.......
+
+}
+
+
+-(void)networkDisConnected:(NSNotification *)notification{
+    //Method Gets Called When Internet connection Gets Dropped.!
+}
+-(void)networkConnected:(NSNotification *)notification{
+    //Method Gets Called When Internet Connected Back.!
+}
+
+
+
+```
+
+
+
+
 
 
 refer the example for More Details
