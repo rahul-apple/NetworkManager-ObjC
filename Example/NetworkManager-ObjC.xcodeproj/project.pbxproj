@@ -23,6 +23,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		A365ED7022A2EEFC557542AF /* Pods_NetworkManager_ObjC_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB4C8D3434D1C5AC1DC1E33 /* Pods_NetworkManager_ObjC_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		BE6885CC1B5CDC47006408EF /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = BE6885CB1B5CDC47006408EF /* .travis.yml */; };
 		BE7CD5CB1B43C6DE0058B0DC /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7CD5C81B43C6DE0058B0DC /* NetworkManager.m */; };
 		BE7CD5CC1B43C6DE0058B0DC /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7CD5CA1B43C6DE0058B0DC /* Reachability.m */; };
 /* End PBXBuildFile section */
@@ -65,6 +66,7 @@
 		6EB4C8D3434D1C5AC1DC1E33 /* Pods_NetworkManager_ObjC_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkManager_ObjC_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		AB2FD01D4A19C7E185C8404A /* Pods-NetworkManager-ObjC_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkManager-ObjC_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkManager-ObjC_Tests/Pods-NetworkManager-ObjC_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		BE6885CB1B5CDC47006408EF /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .travis.yml; path = ../.travis.yml; sourceTree = "<group>"; };
 		BE7CD5C71B43C6DE0058B0DC /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
 		BE7CD5C81B43C6DE0058B0DC /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
 		BE7CD5C91B43C6DE0058B0DC /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				BE6885CB1B5CDC47006408EF /* .travis.yml */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for NetworkManager-ObjC */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -296,6 +299,7 @@
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				BE6885CC1B5CDC47006408EF /* .travis.yml in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

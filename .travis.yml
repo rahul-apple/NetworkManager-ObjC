@@ -1,0 +1,3 @@
+language: objective-c
+xcode_workspace: /Users/nagainfo/NetworkManager-ObjC/Example/NetworkManager-ObjC.xcworkspace # path to your xcodeproj folder
+xcode_scheme: NetworkManager-ObjC_Tests
