@@ -24,6 +24,7 @@ pod update
 Add to Your ViewController
 
 #1.)DELGATE - METHODS
+
 ```
 #import<NetworkManager.h>
 
@@ -51,7 +52,7 @@ Implement These Methods:
 
 
 
-#1.)NOTIFICATION REGISTER - METHODS
+#2.)NOTIFICATION REGISTER - METHODS
 ```
 #import<NetworkManager.h>
 
