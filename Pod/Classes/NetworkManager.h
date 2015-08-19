@@ -14,10 +14,15 @@ typedef enum{
     kNetworkDisConnected
 }kNetworkStatus;
 
+typedef enum{
+    DELEGATE_METHODS,
+    NOTIFICATION_REGISTER
+}implementaionType;
+
 @protocol NetworkManagerDelegate <NSObject>
 
--(void)NetWorkConnectionDropped:(kNetworkStatus)netStatus;
--(void)NetWorkConnectionConnected:(kNetworkStatus)netStatus;
+-(void)netWorkConnectionDropped:(kNetworkStatus)netStatus;
+-(void)netWorkConnectionConnected:(kNetworkStatus)netStatus;
 
 @end
 
@@ -28,6 +33,6 @@ typedef enum{
 @property (nonatomic) kNetworkStatus networkStatus;
 @property (nonatomic,strong) Reachability *internetReachability;
 @property (nonatomic ,strong) id <NetworkManagerDelegate> delegate;
-
+@property (nonatomic)implementaionType typeSelected;
 
 @end
