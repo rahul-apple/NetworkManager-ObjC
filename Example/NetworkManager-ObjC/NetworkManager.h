@@ -34,5 +34,9 @@ typedef enum{
 @property (nonatomic,strong) Reachability *internetReachability;
 @property (nonatomic ,strong) id <NetworkManagerDelegate> delegate;
 @property (nonatomic)implementaionType typeSelected;
-
+@property (nonatomic) BOOL shouldShowStatuBarNotification;
+@property (nonatomic,strong) NSString* networkDisconnectedMessage;
+@property (nonatomic,strong) NSString* networkConnectedMessage;
+- (void)showConnectingMessageWith:(NSString *)message onAutoDismiss:(BOOL)shouldAutoHide;
+- (void)dismissMessage;
 @end

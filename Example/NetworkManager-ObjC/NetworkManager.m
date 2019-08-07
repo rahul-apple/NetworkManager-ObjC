@@ -7,6 +7,7 @@
 //
 
 #import "NetworkManager.h"
+#import "TWStatus.h"
 
 @implementation NetworkManager
 
@@ -19,10 +20,12 @@
 }
 - (id)init {
     if (self = [super init]) {
+        _shouldShowStatuBarNotification = FALSE;
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityChanged:) name:kReachabilityChangedNotification object:nil];
         self.internetReachability = [Reachability reachabilityForInternetConnection];
         [self.internetReachability startNotifier];
         [self checkReachability:self.internetReachability];
+        
     }
     return self;
 }
@@ -43,7 +46,10 @@
             }else if (self.typeSelected == NOTIFICATION_REGISTER){
                  [[NSNotificationCenter defaultCenter] postNotificationName:@"NetworkDisConnected" object:nil];
             }
-            
+            if (_shouldShowStatuBarNotification){
+                NSString* message = (_networkConnectedMessage != nil) ? _networkConnectedMessage : @"No Internet Connection";
+                [self showConnectingMessageWith:message onAutoDismiss:true];
+            }
             
         }
     }
@@ -56,11 +62,26 @@
             }else{
                [self.delegate netWorkConnectionConnected:kNetworkConnected];  
             }
+            if (_shouldShowStatuBarNotification){
+                NSString* message = (_networkDisconnectedMessage != nil) ? _networkDisconnectedMessage : @"Connected";
+                [TWStatus showStatus:message];
+                [TWStatus dismissAfter:3.0];
+            }
            
         }
     }
 }
 
+
+- (void)showConnectingMessageWith:(NSString *)message onAutoDismiss:(BOOL)shouldAutoHide{
+    [TWStatus showLoadingWithStatus:message];
+    if (shouldAutoHide) {
+        [TWStatus dismissAfter:3.0];
+    }
+}
+- (void)dismissMessage{
+    [TWStatus dismiss];
+}
 - (void)dealloc {
     // Should never be called, but just here for clarity really.
 }
