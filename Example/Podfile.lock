@@ -1,6 +1,6 @@
 PODS:
   - Expecta (1.0.0)
-  - NetworkManager-ObjC (0.1.1)
+  - NetworkManager-ObjC (1.0.0)
   - Specta (1.0.2)
 
 DEPENDENCIES:
@@ -8,13 +8,20 @@ DEPENDENCIES:
   - NetworkManager-ObjC (from `../`)
   - Specta
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Expecta
+    - Specta
+
 EXTERNAL SOURCES:
   NetworkManager-ObjC:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
   Expecta: 32604574add2c46a36f8d2f716b6c5736eb75024
-  NetworkManager-ObjC: f69ccf49e05b0e9944c1b4fbcb8af20ed6e8a1a3
+  NetworkManager-ObjC: 0dc87303042d7eeefce566bd4cacff610c1bc826
   Specta: 9cec98310dca411f7c7ffd6943552b501622abfe
 
-COCOAPODS: 0.37.2
+PODFILE CHECKSUM: c053340e99a54e6ebda56de13ba5a8f190df6d61
+
+COCOAPODS: 1.7.3
