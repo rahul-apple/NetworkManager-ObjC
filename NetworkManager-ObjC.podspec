@@ -39,7 +39,7 @@ A class Designed for Check Internet connection.Written for iOS, Objective-C, Coc
 
   s.source_files = 'Pod/Classes/**/*'
   s.resource_bundles = {
-    'NetworkManager-ObjC' => ['Pod/Assets/*.png']
+#'NetworkManager-ObjC' => ['Pod/Assets/*.png']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
